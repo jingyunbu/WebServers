@@ -1,0 +1,256 @@
+11:18:03.726 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"HTTPSCertFile": "./certificates/client-cert.pem",
+	"HTTPSKeyFile": "./certificates/client-key.pem",
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": 9999,
+	"PublicIp": "111.224.220.154",
+	"HttpPort": 81,
+	"HttpsPort": 443,
+	"StreamerPort": 8891,
+	"SFUPort": 8892,
+	"MaxPlayerCount": -1,
+	"DisableSSLCert": true,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:111.224.220.154:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+11:18:03.771 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:111.224.220.154:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+11:18:03.779 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.2.
+11:18:03.795 WebSocket listening for Streamer connections on :8891
+11:18:03.796 WebSocket listening for SFU connections on :8892
+11:18:03.797 WebSocket listening for Players connections on :81
+11:18:03.813 Http listening on *: 81
+11:18:03.816 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:03.817 Setting Keep Alive to true
+11:18:03.818 Matchmaker connection closed (hadError=true)
+11:18:03.818 Try reconnect to Matchmaker in 5 seconds
+11:18:08.828 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:08.829 Setting Keep Alive to true
+11:18:08.829 Matchmaker connection closed (hadError=true)
+11:18:08.830 Try reconnect to Matchmaker in 5 seconds
+11:18:13.844 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:13.845 Setting Keep Alive to true
+11:18:13.846 Matchmaker connection closed (hadError=true)
+11:18:13.846 Try reconnect to Matchmaker in 5 seconds
+11:18:18.852 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:18.853 Setting Keep Alive to true
+11:18:18.855 Matchmaker connection closed (hadError=true)
+11:18:18.855 Try reconnect to Matchmaker in 5 seconds
+11:18:19.625 Streamer connected: ::ffff:127.0.0.1
+11:18:19.627 [37munknown <-[32m {"type":"identify"}
+11:18:19.720 [37m__LEGACY__ ->[34m {"type":"endpointId","id":"DefaultStreamer"}
+11:18:23.866 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:23.868 Setting Keep Alive to true
+11:18:23.868 Matchmaker connection closed (hadError=true)
+11:18:23.873 Try reconnect to Matchmaker in 5 seconds
+11:18:28.888 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:28.889 Setting Keep Alive to true
+11:18:28.889 Matchmaker connection closed (hadError=true)
+11:18:28.890 Try reconnect to Matchmaker in 5 seconds
+11:18:29.478 player 1 (::ffff:10.31.0.221) connected
+11:18:29.479 [37m[players] <-[32m {"type":"playerCount","count":1}
+11:18:29.483 [37m1 ->[34m {"type":"listStreamers"}
+11:18:29.483 [37m1 <-[32m {"type":"streamerList","ids":["DefaultStreamer"]}
+11:18:29.486 [37m1 ->[34m {"type":"subscribe","streamerId":"DefaultStreamer"}
+11:18:29.486 [37mDefaultStreamer <-[32m {"type":"playerConnected","playerId":"1","dataChannel":true,"sfu":false,"sendOffer":true}
+11:18:29.542 [37mDefaultStreamer -> 1[36m {"type":"offer","sdp":"v=0\r\no=- 6085017925089766045 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 125 101 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OT+A\r\na=ice-pwd:1ymVHCh0OgY8kOSU3K8XwIig\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0D:88:16:4C:6D:CC:82:D9:EC:37:92:B4:64:E7:FC:A8:AC:F4:42:A2:51:48:A0:B3:43:AE:AE:03:3B:12:13:9C\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 H264/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:125 red/90000\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=125\r\na=rtpmap:102 ulpfec/90000\r\na=ssrc-group:FID 4050739127 401082459\r\na=ssrc:4050739127 cname:OAEbwsde0VirB5tr\r\na=ssrc:4050739127 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:4050739127 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:4050739127 label:pixelstreaming_video_track_label\r\na=ssrc:401082459 cname:OAEbwsde0VirB5tr\r\na=ssrc:401082459 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:401082459 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:401082459 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OT+A\r\na=ice-pwd:1ymVHCh0OgY8kOSU3K8XwIig\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0D:88:16:4C:6D:CC:82:D9:EC:37:92:B4:64:E7:FC:A8:AC:F4:42:A2:51:48:A0:B3:43:AE:AE:03:3B:12:13:9C\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 maxaveragebitrate=510000;maxplaybackrate=48000;minptime=3;sprop-stereo=1;stereo=1;usedtx=0;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:110 telephone-event/48000\r\na=maxptime:120\r\na=ptime:20\r\na=ssrc:3681085970 cname:OAEbwsde0VirB5tr\r\na=ssrc:3681085970 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:3681085970 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:3681085970 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:OT+A\r\na=ice-pwd:1ymVHCh0OgY8kOSU3K8XwIig\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0D:88:16:4C:6D:CC:82:D9:EC:37:92:B4:64:E7:FC:A8:AC:F4:42:A2:51:48:A0:B3:43:AE:AE:03:3B:12:13:9C\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+11:18:29.573 [37m1 -> DefaultStreamer[36m {"type":"answer","sdp":"v=0\r\no=- 301130024413068413 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:icTd\r\na=ice-pwd:+pGX98liW7vsf3G1SifZB+be\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D3:1F:21:15:04:B9:D5:7C:00:D3:09:D5:59:0E:2D:6F:68:DD:1F:45:4B:3B:8E:CB:E1:B7:AF:4B:2E:D2:8B:4B\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:98 H264/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:icTd\r\na=ice-pwd:+pGX98liW7vsf3G1SifZB+be\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D3:1F:21:15:04:B9:D5:7C:00:D3:09:D5:59:0E:2D:6F:68:DD:1F:45:4B:3B:8E:CB:E1:B7:AF:4B:2E:D2:8B:4B\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:icTd\r\na=ice-pwd:+pGX98liW7vsf3G1SifZB+be\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D3:1F:21:15:04:B9:D5:7C:00:D3:09:D5:59:0E:2D:6F:68:DD:1F:45:4B:3B:8E:CB:E1:B7:AF:4B:2E:D2:8B:4B\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+11:18:29.574 [37m1 -> DefaultStreamer[36m {"type":"iceCandidate","candidate":{"candidate":"candidate:621348101 1 udp 2113937151 80fb6be5-cfbc-4a84-964e-2001115d04b3.local 58049 typ host generation 0 ufrag icTd network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"icTd"}}
+11:18:29.574 [37m1 -> DefaultStreamer[36m {"type":"iceCandidate","candidate":{"candidate":"candidate:4133498176 1 udp 2113939711 13b03dfd-3ca5-43a0-9a41-2a3d751cea09.local 58050 typ host generation 0 ufrag icTd network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"icTd"}}
+11:18:29.581 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 54532 typ host generation 0 ufrag OT+A network-id 2 network-cost 10"}}
+11:18:29.608 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 54533 typ host generation 0 ufrag OT+A network-id 3 network-cost 10"}}
+11:18:29.642 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 54534 typ host generation 0 ufrag OT+A network-id 4 network-cost 10"}}
+11:18:29.676 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 54535 typ host generation 0 ufrag OT+A network-id 1 network-cost 10"}}
+11:18:29.710 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 54536 typ host generation 0 ufrag OT+A network-id 2 network-cost 10"}}
+11:18:29.743 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 54537 typ host generation 0 ufrag OT+A network-id 3 network-cost 10"}}
+11:18:29.777 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 54538 typ host generation 0 ufrag OT+A network-id 4 network-cost 10"}}
+11:18:29.812 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 54539 typ host generation 0 ufrag OT+A network-id 1 network-cost 10"}}
+11:18:29.845 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 54540 typ host generation 0 ufrag OT+A network-id 2 network-cost 10"}}
+11:18:29.879 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 54541 typ host generation 0 ufrag OT+A network-id 3 network-cost 10"}}
+11:18:29.914 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 54542 typ host generation 0 ufrag OT+A network-id 4 network-cost 10"}}
+11:18:29.948 [37mDefaultStreamer -> 1[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 54543 typ host generation 0 ufrag OT+A network-id 1 network-cost 10"}}
+11:18:33.893 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:33.894 Setting Keep Alive to true
+11:18:33.895 Matchmaker connection closed (hadError=true)
+11:18:33.896 Try reconnect to Matchmaker in 5 seconds
+11:18:37.784 player 1 connection closed: 1001 - 
+11:18:37.785 [37mDefaultStreamer <-[32m {"type":"playerDisconnected","playerId":"1"}
+11:18:37.786 [37m[players] <-[32m {"type":"playerCount","count":0}
+11:18:38.897 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:38.898 Setting Keep Alive to true
+11:18:38.899 Matchmaker connection closed (hadError=true)
+11:18:38.899 Try reconnect to Matchmaker in 5 seconds
+11:18:43.910 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:43.913 Setting Keep Alive to true
+11:18:43.913 Matchmaker connection closed (hadError=true)
+11:18:43.919 Try reconnect to Matchmaker in 5 seconds
+11:18:48.927 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:48.928 Setting Keep Alive to true
+11:18:48.931 Matchmaker connection closed (hadError=true)
+11:18:48.931 Try reconnect to Matchmaker in 5 seconds
+11:18:53.935 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:53.936 Setting Keep Alive to true
+11:18:53.937 Matchmaker connection closed (hadError=true)
+11:18:53.937 Try reconnect to Matchmaker in 5 seconds
+11:18:58.944 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:18:58.946 Setting Keep Alive to true
+11:18:58.947 Matchmaker connection closed (hadError=true)
+11:18:58.947 Try reconnect to Matchmaker in 5 seconds
+11:19:03.951 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:03.952 Setting Keep Alive to true
+11:19:03.953 Matchmaker connection closed (hadError=true)
+11:19:03.953 Try reconnect to Matchmaker in 5 seconds
+11:19:08.960 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:08.961 Setting Keep Alive to true
+11:19:08.962 Matchmaker connection closed (hadError=true)
+11:19:08.965 Try reconnect to Matchmaker in 5 seconds
+11:19:13.975 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:13.976 Setting Keep Alive to true
+11:19:13.977 Matchmaker connection closed (hadError=true)
+11:19:13.977 Try reconnect to Matchmaker in 5 seconds
+11:19:18.987 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:18.991 Setting Keep Alive to true
+11:19:18.992 Matchmaker connection closed (hadError=true)
+11:19:18.992 Try reconnect to Matchmaker in 5 seconds
+11:19:19.337 player 2 (::ffff:10.31.0.221) connected
+11:19:19.338 [37m[players] <-[32m {"type":"playerCount","count":1}
+11:19:19.339 [37m2 ->[34m {"type":"listStreamers"}
+11:19:19.340 [37m2 <-[32m {"type":"streamerList","ids":["DefaultStreamer"]}
+11:19:19.343 [37m2 ->[34m {"type":"subscribe","streamerId":"DefaultStreamer"}
+11:19:19.344 [37mDefaultStreamer <-[32m {"type":"playerConnected","playerId":"2","dataChannel":true,"sfu":false,"sendOffer":true}
+11:19:19.410 [37mDefaultStreamer -> 2[36m {"type":"offer","sdp":"v=0\r\no=- 128922309884738405 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 125 101 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OXNN\r\na=ice-pwd:1RjmuplNuacNpyt7cZDiKp20\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6F:E9:AF:AA:F9:7E:A7:F5:A4:25:6F:BD:3B:27:F4:31:2A:04:42:99:F9:A1:52:16:6C:8B:FF:C6:8A:AC:30:29\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 H264/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:125 red/90000\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=125\r\na=rtpmap:102 ulpfec/90000\r\na=ssrc-group:FID 3500240784 3656588779\r\na=ssrc:3500240784 cname:D65M1zOz7HoFDMes\r\na=ssrc:3500240784 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:3500240784 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:3500240784 label:pixelstreaming_video_track_label\r\na=ssrc:3656588779 cname:D65M1zOz7HoFDMes\r\na=ssrc:3656588779 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:3656588779 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:3656588779 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OXNN\r\na=ice-pwd:1RjmuplNuacNpyt7cZDiKp20\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6F:E9:AF:AA:F9:7E:A7:F5:A4:25:6F:BD:3B:27:F4:31:2A:04:42:99:F9:A1:52:16:6C:8B:FF:C6:8A:AC:30:29\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 maxaveragebitrate=510000;maxplaybackrate=48000;minptime=3;sprop-stereo=1;stereo=1;usedtx=0;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:110 telephone-event/48000\r\na=maxptime:120\r\na=ptime:20\r\na=ssrc:2181817641 cname:D65M1zOz7HoFDMes\r\na=ssrc:2181817641 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:2181817641 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:2181817641 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:OXNN\r\na=ice-pwd:1RjmuplNuacNpyt7cZDiKp20\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6F:E9:AF:AA:F9:7E:A7:F5:A4:25:6F:BD:3B:27:F4:31:2A:04:42:99:F9:A1:52:16:6C:8B:FF:C6:8A:AC:30:29\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+11:19:19.426 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 63630 typ host generation 0 ufrag OXNN network-id 2 network-cost 10"}}
+11:19:19.440 [37m2 -> DefaultStreamer[36m {"type":"answer","sdp":"v=0\r\no=- 6328694265541609798 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 98\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:t2MF\r\na=ice-pwd:4Xv+xNsQeJnblnhIarbJSOEh\r\na=ice-options:trickle\r\na=fingerprint:sha-256 76:15:58:0A:69:E4:6C:3C:09:1E:F8:92:4A:B1:E6:40:99:8E:74:04:DF:80:FE:69:37:B6:B0:80:BE:4B:33:94\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:98 H264/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:t2MF\r\na=ice-pwd:4Xv+xNsQeJnblnhIarbJSOEh\r\na=ice-options:trickle\r\na=fingerprint:sha-256 76:15:58:0A:69:E4:6C:3C:09:1E:F8:92:4A:B1:E6:40:99:8E:74:04:DF:80:FE:69:37:B6:B0:80:BE:4B:33:94\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:t2MF\r\na=ice-pwd:4Xv+xNsQeJnblnhIarbJSOEh\r\na=ice-options:trickle\r\na=fingerprint:sha-256 76:15:58:0A:69:E4:6C:3C:09:1E:F8:92:4A:B1:E6:40:99:8E:74:04:DF:80:FE:69:37:B6:B0:80:BE:4B:33:94\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+11:19:19.441 [37m2 -> DefaultStreamer[36m {"type":"iceCandidate","candidate":{"candidate":"candidate:1388941279 1 udp 2113937151 f95556e1-296a-4a62-96c7-11eed73f93e9.local 64742 typ host generation 0 ufrag t2MF network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"t2MF"}}
+11:19:19.442 [37m2 -> DefaultStreamer[36m {"type":"iceCandidate","candidate":{"candidate":"candidate:1578565356 1 udp 2113939711 6c60e3d5-0f8f-4cdd-849d-132dd34aaf1d.local 64743 typ host generation 0 ufrag t2MF network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"t2MF"}}
+11:19:19.459 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 63631 typ host generation 0 ufrag OXNN network-id 3 network-cost 10"}}
+11:19:19.493 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 63632 typ host generation 0 ufrag OXNN network-id 4 network-cost 10"}}
+11:19:19.527 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 63633 typ host generation 0 ufrag OXNN network-id 1 network-cost 10"}}
+11:19:19.561 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 63634 typ host generation 0 ufrag OXNN network-id 2 network-cost 10"}}
+11:19:19.595 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 63635 typ host generation 0 ufrag OXNN network-id 3 network-cost 10"}}
+11:19:19.629 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 63636 typ host generation 0 ufrag OXNN network-id 4 network-cost 10"}}
+11:19:19.663 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 63637 typ host generation 0 ufrag OXNN network-id 1 network-cost 10"}}
+11:19:19.697 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:1183190261 1 udp 2122262783 240e:341:b20b:1501:9157:e7d2:9c91:e843 63638 typ host generation 0 ufrag OXNN network-id 2 network-cost 10"}}
+11:19:19.730 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2308131946 1 udp 2122197247 240e:341:b20b:1501::9dd 63639 typ host generation 0 ufrag OXNN network-id 3 network-cost 10"}}
+11:19:19.765 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:1815619542 1 udp 2122131711 240e:341:b20b:1501:a603:6bbf:9a99:1c3 63640 typ host generation 0 ufrag OXNN network-id 4 network-cost 10"}}
+11:19:19.798 [37mDefaultStreamer -> 2[36m {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2406201514 1 udp 2122063615 10.31.0.221 63641 typ host generation 0 ufrag OXNN network-id 1 network-cost 10"}}
+11:19:19.832 [37mDefaultStreamer ->[34m {"type":"ping","time":1692069559}
+11:19:23.999 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:24.000 Setting Keep Alive to true
+11:19:24.000 Matchmaker connection closed (hadError=true)
+11:19:24.001 Try reconnect to Matchmaker in 5 seconds
+11:19:29.009 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:29.011 Setting Keep Alive to true
+11:19:29.012 Matchmaker connection closed (hadError=true)
+11:19:29.013 Try reconnect to Matchmaker in 5 seconds
+11:19:32.816 player 2 connection closed: 1001 - 
+11:19:32.817 [37mDefaultStreamer <-[32m {"type":"playerDisconnected","playerId":"2"}
+11:19:32.817 [37m[players] <-[32m {"type":"playerCount","count":0}
+11:19:34.023 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:34.024 Setting Keep Alive to true
+11:19:34.027 Matchmaker connection closed (hadError=true)
+11:19:34.027 Try reconnect to Matchmaker in 5 seconds
+11:19:36.522 unsubscribing all players on DefaultStreamer
+11:19:39.040 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:39.041 Setting Keep Alive to true
+11:19:39.041 Matchmaker connection closed (hadError=true)
+11:19:39.042 Try reconnect to Matchmaker in 5 seconds
+11:19:44.057 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:44.060 Setting Keep Alive to true
+11:19:44.060 Matchmaker connection closed (hadError=true)
+11:19:44.060 Try reconnect to Matchmaker in 5 seconds
+11:19:49.060 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:49.061 Setting Keep Alive to true
+11:19:49.063 Matchmaker connection closed (hadError=true)
+11:19:49.063 Try reconnect to Matchmaker in 5 seconds
+11:19:54.078 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:54.079 Setting Keep Alive to true
+11:19:54.079 Matchmaker connection closed (hadError=true)
+11:19:54.081 Try reconnect to Matchmaker in 5 seconds
+11:19:59.092 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:19:59.093 Setting Keep Alive to true
+11:19:59.094 Matchmaker connection closed (hadError=true)
+11:19:59.094 Try reconnect to Matchmaker in 5 seconds
+11:20:04.105 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:04.106 Setting Keep Alive to true
+11:20:04.106 Matchmaker connection closed (hadError=true)
+11:20:04.106 Try reconnect to Matchmaker in 5 seconds
+11:20:09.109 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:09.110 Setting Keep Alive to true
+11:20:09.111 Matchmaker connection closed (hadError=true)
+11:20:09.111 Try reconnect to Matchmaker in 5 seconds
+11:20:14.125 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:14.126 Setting Keep Alive to true
+11:20:14.127 Matchmaker connection closed (hadError=true)
+11:20:14.127 Try reconnect to Matchmaker in 5 seconds
+11:20:19.139 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:19.140 Setting Keep Alive to true
+11:20:19.140 Matchmaker connection closed (hadError=true)
+11:20:19.141 Try reconnect to Matchmaker in 5 seconds
+11:20:24.149 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:24.150 Setting Keep Alive to true
+11:20:24.150 Matchmaker connection closed (hadError=true)
+11:20:24.151 Try reconnect to Matchmaker in 5 seconds
+11:20:29.166 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:29.167 Setting Keep Alive to true
+11:20:29.168 Matchmaker connection closed (hadError=true)
+11:20:29.168 Try reconnect to Matchmaker in 5 seconds
+11:20:34.180 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:34.181 Setting Keep Alive to true
+11:20:34.182 Matchmaker connection closed (hadError=true)
+11:20:34.182 Try reconnect to Matchmaker in 5 seconds
+11:20:39.191 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:39.192 Setting Keep Alive to true
+11:20:39.192 Matchmaker connection closed (hadError=true)
+11:20:39.193 Try reconnect to Matchmaker in 5 seconds
+11:20:44.195 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:44.196 Setting Keep Alive to true
+11:20:44.196 Matchmaker connection closed (hadError=true)
+11:20:44.196 Try reconnect to Matchmaker in 5 seconds
+11:20:49.206 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:49.207 Setting Keep Alive to true
+11:20:49.207 Matchmaker connection closed (hadError=true)
+11:20:49.209 Try reconnect to Matchmaker in 5 seconds
+11:20:54.211 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:54.212 Setting Keep Alive to true
+11:20:54.212 Matchmaker connection closed (hadError=true)
+11:20:54.213 Try reconnect to Matchmaker in 5 seconds
+11:20:59.228 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:20:59.229 Setting Keep Alive to true
+11:20:59.229 Matchmaker connection closed (hadError=true)
+11:20:59.230 Try reconnect to Matchmaker in 5 seconds
+11:21:04.230 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:04.231 Setting Keep Alive to true
+11:21:04.233 Matchmaker connection closed (hadError=true)
+11:21:04.233 Try reconnect to Matchmaker in 5 seconds
+11:21:09.246 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:09.246 Setting Keep Alive to true
+11:21:09.248 Matchmaker connection closed (hadError=true)
+11:21:09.249 Try reconnect to Matchmaker in 5 seconds
+11:21:14.263 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:14.264 Setting Keep Alive to true
+11:21:14.266 Matchmaker connection closed (hadError=true)
+11:21:14.267 Try reconnect to Matchmaker in 5 seconds
+11:21:19.277 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:19.277 Setting Keep Alive to true
+11:21:19.278 Matchmaker connection closed (hadError=true)
+11:21:19.280 Try reconnect to Matchmaker in 5 seconds
+11:21:24.287 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:24.288 Setting Keep Alive to true
+11:21:24.288 Matchmaker connection closed (hadError=true)
+11:21:24.290 Try reconnect to Matchmaker in 5 seconds
+11:21:29.305 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:29.306 Setting Keep Alive to true
+11:21:29.306 Matchmaker connection closed (hadError=true)
+11:21:29.306 Try reconnect to Matchmaker in 5 seconds
+11:21:34.318 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+11:21:34.319 Setting Keep Alive to true
+11:21:34.320 Matchmaker connection closed (hadError=true)
+11:21:34.320 Try reconnect to Matchmaker in 5 seconds

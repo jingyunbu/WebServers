@@ -1,0 +1,42 @@
+17:29:03.453 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"HTTPSCertFile": "./certificates/client-cert.pem",
+	"HTTPSKeyFile": "./certificates/client-key.pem",
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": 9999,
+	"PublicIp": "111.224.220.154",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"SFUPort": 8889,
+	"MaxPlayerCount": -1,
+	"DisableSSLCert": true,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:111.224.220.154:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+17:29:03.483 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:111.224.220.154:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+17:29:03.489 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.2.
+17:29:03.500 WebSocket listening for Streamer connections on :8888
+17:29:03.501 WebSocket listening for SFU connections on :8889
+17:29:03.502 WebSocket listening for Players connections on :80
+17:29:03.504 Http listening on *: 80
+17:31:42.464 Streamer connected: ::ffff:127.0.0.1
+17:31:42.469 [37munknown <-[32m {"type":"identify"}
+17:31:42.470 [37m__LEGACY__ ->[34m {"type":"ping","time":1692005446}
+17:31:42.475 player 1 (::ffff:10.31.0.221) connected
+17:31:42.475 [37m[players] <-[32m {"type":"playerCount","count":1}
+17:31:42.480 Streamer connected: ::ffff:127.0.0.1
+17:31:42.480 [37munknown <-[32m {"type":"identify"}
+17:31:42.484 Streamer connected: ::ffff:127.0.0.1
+17:31:42.485 [37munknown <-[32m {"type":"identify"}
+17:31:42.485 unsubscribing all players on __LEGACY__
+17:31:42.486 player 1 connection closed: 1006 - 
+17:31:42.486 [37m[players] <-[32m {"type":"playerCount","count":0}
+17:31:42.576 [37m__LEGACY__ ->[34m {"type":"endpointId","id":"DefaultStreamer"}

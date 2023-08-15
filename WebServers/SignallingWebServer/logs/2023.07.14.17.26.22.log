@@ -1,0 +1,45 @@
+17:26:22.301 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"HTTPSCertFile": "./certificates/client-cert.pem",
+	"HTTPSKeyFile": "./certificates/client-key.pem",
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": 9999,
+	"PublicIp": "111.224.220.154",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"SFUPort": 8889,
+	"MaxPlayerCount": -1,
+	"DisableSSLCert": true,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:111.224.220.154:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+17:26:22.326 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:111.224.220.154:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+17:26:22.331 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.2.
+17:26:22.341 WebSocket listening for Streamer connections on :8888
+17:26:22.342 WebSocket listening for SFU connections on :8889
+17:26:22.342 WebSocket listening for Players connections on :80
+17:26:22.343 Http listening on *: 80
+17:27:07.712 player 1 (::ffff:10.31.0.221) connected
+17:27:07.713 [37m[players] <-[32m {"type":"playerCount","count":1}
+17:27:07.714 [37m1 ->[34m {"type":"listStreamers"}
+17:27:07.714 [37m1 <-[32m {"type":"streamerList","ids":[]}
+17:27:08.306 player 1 connection closed: 1005 - 
+17:27:08.306 [37m[players] <-[32m {"type":"playerCount","count":0}
+17:27:11.307 player 2 (::ffff:10.31.0.221) connected
+17:27:11.307 [37m[players] <-[32m {"type":"playerCount","count":1}
+17:27:11.307 [37m2 ->[34m {"type":"listStreamers"}
+17:27:11.308 [37m2 <-[32m {"type":"streamerList","ids":[]}
+17:27:11.928 player 2 connection closed: 1005 - 
+17:27:11.928 [37m[players] <-[32m {"type":"playerCount","count":0}
+17:27:14.935 player 3 (::ffff:10.31.0.221) connected
+17:27:14.936 [37m[players] <-[32m {"type":"playerCount","count":1}
+17:27:14.936 [37m3 ->[34m {"type":"listStreamers"}
+17:27:14.936 [37m3 <-[32m {"type":"streamerList","ids":[]}

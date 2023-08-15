@@ -1,0 +1,407 @@
+10:44:05.356 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"HTTPSCertFile": "./certificates/client-cert.pem",
+	"HTTPSKeyFile": "./certificates/client-key.pem",
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": 9999,
+	"PublicIp": "111.224.220.154",
+	"HttpPort": 81,
+	"HttpsPort": 443,
+	"StreamerPort": 8891,
+	"SFUPort": 8892,
+	"MaxPlayerCount": -1,
+	"DisableSSLCert": true,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:111.224.220.154:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+10:44:05.381 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:111.224.220.154:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+10:44:05.390 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.2.
+10:44:05.404 WebSocket listening for Streamer connections on :8891
+10:44:05.407 WebSocket listening for SFU connections on :8892
+10:44:05.409 WebSocket listening for Players connections on :81
+10:44:05.423 Http listening on *: 81
+10:44:05.426 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:05.427 Setting Keep Alive to true
+10:44:05.427 Matchmaker connection closed (hadError=true)
+10:44:05.429 Try reconnect to Matchmaker in 5 seconds
+10:44:10.434 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:10.435 Setting Keep Alive to true
+10:44:10.436 Matchmaker connection closed (hadError=true)
+10:44:10.436 Try reconnect to Matchmaker in 5 seconds
+10:44:15.438 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:15.439 Setting Keep Alive to true
+10:44:15.442 Matchmaker connection closed (hadError=true)
+10:44:15.442 Try reconnect to Matchmaker in 5 seconds
+10:44:20.457 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:20.458 Setting Keep Alive to true
+10:44:20.459 Matchmaker connection closed (hadError=true)
+10:44:20.459 Try reconnect to Matchmaker in 5 seconds
+10:44:22.524 player 1 (::ffff:10.31.0.221) connected
+10:44:22.525 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:44:22.526 [37m1 ->[34m {"type":"listStreamers"}
+10:44:22.528 [37m1 <-[32m {"type":"streamerList","ids":[]}
+10:44:23.047 player 1 connection closed: 1005 - 
+10:44:23.048 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:44:25.460 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:25.461 Setting Keep Alive to true
+10:44:25.462 Matchmaker connection closed (hadError=true)
+10:44:25.463 Try reconnect to Matchmaker in 5 seconds
+10:44:26.049 player 2 (::ffff:10.31.0.221) connected
+10:44:26.050 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:44:26.051 [37m2 ->[34m {"type":"listStreamers"}
+10:44:26.052 [37m2 <-[32m {"type":"streamerList","ids":[]}
+10:44:30.479 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:30.480 Setting Keep Alive to true
+10:44:30.481 Matchmaker connection closed (hadError=true)
+10:44:30.484 Try reconnect to Matchmaker in 5 seconds
+10:44:35.487 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:35.488 Setting Keep Alive to true
+10:44:35.488 Matchmaker connection closed (hadError=true)
+10:44:35.489 Try reconnect to Matchmaker in 5 seconds
+10:44:40.503 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:40.504 Setting Keep Alive to true
+10:44:40.504 Matchmaker connection closed (hadError=true)
+10:44:40.505 Try reconnect to Matchmaker in 5 seconds
+10:44:45.520 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:45.521 Setting Keep Alive to true
+10:44:45.522 Matchmaker connection closed (hadError=true)
+10:44:45.522 Try reconnect to Matchmaker in 5 seconds
+10:44:50.530 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:50.531 Setting Keep Alive to true
+10:44:50.533 Matchmaker connection closed (hadError=true)
+10:44:50.533 Try reconnect to Matchmaker in 5 seconds
+10:44:55.540 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:44:55.541 Setting Keep Alive to true
+10:44:55.541 Matchmaker connection closed (hadError=true)
+10:44:55.541 Try reconnect to Matchmaker in 5 seconds
+10:45:00.544 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:00.545 Setting Keep Alive to true
+10:45:00.545 Matchmaker connection closed (hadError=true)
+10:45:00.546 Try reconnect to Matchmaker in 5 seconds
+10:45:05.559 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:05.560 Setting Keep Alive to true
+10:45:05.560 Matchmaker connection closed (hadError=true)
+10:45:05.561 Try reconnect to Matchmaker in 5 seconds
+10:45:10.577 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:10.578 Setting Keep Alive to true
+10:45:10.585 Matchmaker connection closed (hadError=true)
+10:45:10.585 Try reconnect to Matchmaker in 5 seconds
+10:45:15.595 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:15.596 Setting Keep Alive to true
+10:45:15.596 Matchmaker connection closed (hadError=true)
+10:45:15.597 Try reconnect to Matchmaker in 5 seconds
+10:45:20.598 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:20.599 Setting Keep Alive to true
+10:45:20.602 Matchmaker connection closed (hadError=true)
+10:45:20.602 Try reconnect to Matchmaker in 5 seconds
+10:45:22.164 player 2 connection closed: 1005 - 
+10:45:22.165 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:45:25.179 player 3 (::ffff:10.31.0.221) connected
+10:45:25.180 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:45:25.181 [37m3 ->[34m {"type":"listStreamers"}
+10:45:25.182 [37m3 <-[32m {"type":"streamerList","ids":[]}
+10:45:25.607 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:25.608 Setting Keep Alive to true
+10:45:25.610 Matchmaker connection closed (hadError=true)
+10:45:25.611 Try reconnect to Matchmaker in 5 seconds
+10:45:26.740 player 3 connection closed: 1005 - 
+10:45:26.741 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:45:29.750 player 4 (::ffff:10.31.0.221) connected
+10:45:29.751 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:45:29.752 [37m4 ->[34m {"type":"listStreamers"}
+10:45:29.752 [37m4 <-[32m {"type":"streamerList","ids":[]}
+10:45:30.615 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:30.616 Setting Keep Alive to true
+10:45:30.619 Matchmaker connection closed (hadError=true)
+10:45:30.619 Try reconnect to Matchmaker in 5 seconds
+10:45:35.622 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:35.623 Setting Keep Alive to true
+10:45:35.624 Matchmaker connection closed (hadError=true)
+10:45:35.624 Try reconnect to Matchmaker in 5 seconds
+10:45:40.637 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:40.638 Setting Keep Alive to true
+10:45:40.639 Matchmaker connection closed (hadError=true)
+10:45:40.639 Try reconnect to Matchmaker in 5 seconds
+10:45:45.655 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:45.656 Setting Keep Alive to true
+10:45:45.657 Matchmaker connection closed (hadError=true)
+10:45:45.658 Try reconnect to Matchmaker in 5 seconds
+10:45:50.668 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:50.669 Setting Keep Alive to true
+10:45:50.670 Matchmaker connection closed (hadError=true)
+10:45:50.670 Try reconnect to Matchmaker in 5 seconds
+10:45:55.686 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:45:55.687 Setting Keep Alive to true
+10:45:55.687 Matchmaker connection closed (hadError=true)
+10:45:55.688 Try reconnect to Matchmaker in 5 seconds
+10:46:00.698 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:00.700 Setting Keep Alive to true
+10:46:00.700 Matchmaker connection closed (hadError=true)
+10:46:00.701 Try reconnect to Matchmaker in 5 seconds
+10:46:05.708 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:05.709 Setting Keep Alive to true
+10:46:05.709 Matchmaker connection closed (hadError=true)
+10:46:05.710 Try reconnect to Matchmaker in 5 seconds
+10:46:10.713 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:10.714 Setting Keep Alive to true
+10:46:10.715 Matchmaker connection closed (hadError=true)
+10:46:10.715 Try reconnect to Matchmaker in 5 seconds
+10:46:15.717 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:15.718 Setting Keep Alive to true
+10:46:15.718 Matchmaker connection closed (hadError=true)
+10:46:15.720 Try reconnect to Matchmaker in 5 seconds
+10:46:20.728 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:20.729 Setting Keep Alive to true
+10:46:20.729 Matchmaker connection closed (hadError=true)
+10:46:20.730 Try reconnect to Matchmaker in 5 seconds
+10:46:25.736 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:25.738 Setting Keep Alive to true
+10:46:25.738 Matchmaker connection closed (hadError=true)
+10:46:25.741 Try reconnect to Matchmaker in 5 seconds
+10:46:30.750 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:30.751 Setting Keep Alive to true
+10:46:30.751 Matchmaker connection closed (hadError=true)
+10:46:30.753 Try reconnect to Matchmaker in 5 seconds
+10:46:35.761 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:35.762 Setting Keep Alive to true
+10:46:35.762 Matchmaker connection closed (hadError=true)
+10:46:35.764 Try reconnect to Matchmaker in 5 seconds
+10:46:40.778 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:40.779 Setting Keep Alive to true
+10:46:40.781 Matchmaker connection closed (hadError=true)
+10:46:40.781 Try reconnect to Matchmaker in 5 seconds
+10:46:45.785 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:45.787 Setting Keep Alive to true
+10:46:45.788 Matchmaker connection closed (hadError=true)
+10:46:45.788 Try reconnect to Matchmaker in 5 seconds
+10:46:50.791 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:50.792 Setting Keep Alive to true
+10:46:50.793 Matchmaker connection closed (hadError=true)
+10:46:50.796 Try reconnect to Matchmaker in 5 seconds
+10:46:55.808 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:46:55.810 Setting Keep Alive to true
+10:46:55.810 Matchmaker connection closed (hadError=true)
+10:46:55.813 Try reconnect to Matchmaker in 5 seconds
+10:47:00.823 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:00.824 Setting Keep Alive to true
+10:47:00.825 Matchmaker connection closed (hadError=true)
+10:47:00.826 Try reconnect to Matchmaker in 5 seconds
+10:47:05.840 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:05.841 Setting Keep Alive to true
+10:47:05.842 Matchmaker connection closed (hadError=true)
+10:47:05.843 Try reconnect to Matchmaker in 5 seconds
+10:47:10.855 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:10.857 Setting Keep Alive to true
+10:47:10.857 Matchmaker connection closed (hadError=true)
+10:47:10.859 Try reconnect to Matchmaker in 5 seconds
+10:47:15.860 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:15.860 Setting Keep Alive to true
+10:47:15.861 Matchmaker connection closed (hadError=true)
+10:47:15.861 Try reconnect to Matchmaker in 5 seconds
+10:47:19.507 player 4 connection closed: 1005 - 
+10:47:19.508 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:47:20.863 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:20.864 Setting Keep Alive to true
+10:47:20.865 Matchmaker connection closed (hadError=true)
+10:47:20.866 Try reconnect to Matchmaker in 5 seconds
+10:47:22.522 player 5 (::ffff:10.31.0.221) connected
+10:47:22.523 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:47:22.525 [37m5 ->[34m {"type":"listStreamers"}
+10:47:22.526 [37m5 <-[32m {"type":"streamerList","ids":[]}
+10:47:25.881 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:25.882 Setting Keep Alive to true
+10:47:25.883 Matchmaker connection closed (hadError=true)
+10:47:25.883 Try reconnect to Matchmaker in 5 seconds
+10:47:26.337 player 5 connection closed: 1005 - 
+10:47:26.342 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:47:29.347 player 6 (::ffff:10.31.0.221) connected
+10:47:29.348 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:47:29.349 [37m6 ->[34m {"type":"listStreamers"}
+10:47:29.350 [37m6 <-[32m {"type":"streamerList","ids":[]}
+10:47:30.843 player 6 connection closed: 1005 - 
+10:47:30.844 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:47:30.894 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:30.895 Setting Keep Alive to true
+10:47:30.896 Matchmaker connection closed (hadError=true)
+10:47:30.896 Try reconnect to Matchmaker in 5 seconds
+10:47:33.853 player 7 (::ffff:10.31.0.221) connected
+10:47:33.855 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:47:33.856 [37m7 ->[34m {"type":"listStreamers"}
+10:47:33.856 [37m7 <-[32m {"type":"streamerList","ids":[]}
+10:47:35.902 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:35.904 Setting Keep Alive to true
+10:47:35.905 Matchmaker connection closed (hadError=true)
+10:47:35.905 Try reconnect to Matchmaker in 5 seconds
+10:47:40.911 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:40.912 Setting Keep Alive to true
+10:47:40.914 Matchmaker connection closed (hadError=true)
+10:47:40.915 Try reconnect to Matchmaker in 5 seconds
+10:47:45.923 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:45.924 Setting Keep Alive to true
+10:47:45.925 Matchmaker connection closed (hadError=true)
+10:47:45.925 Try reconnect to Matchmaker in 5 seconds
+10:47:49.535 player 7 connection closed: 1005 - 
+10:47:49.536 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:47:50.941 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:50.942 Setting Keep Alive to true
+10:47:50.943 Matchmaker connection closed (hadError=true)
+10:47:50.944 Try reconnect to Matchmaker in 5 seconds
+10:47:52.538 player 8 (::ffff:10.31.0.221) connected
+10:47:52.539 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:47:52.542 [37m8 ->[34m {"type":"listStreamers"}
+10:47:52.543 [37m8 <-[32m {"type":"streamerList","ids":[]}
+10:47:55.945 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:47:55.946 Setting Keep Alive to true
+10:47:55.947 Matchmaker connection closed (hadError=true)
+10:47:55.947 Try reconnect to Matchmaker in 5 seconds
+10:48:00.950 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:00.951 Setting Keep Alive to true
+10:48:00.951 Matchmaker connection closed (hadError=true)
+10:48:00.951 Try reconnect to Matchmaker in 5 seconds
+10:48:05.954 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:05.955 Setting Keep Alive to true
+10:48:05.955 Matchmaker connection closed (hadError=true)
+10:48:05.956 Try reconnect to Matchmaker in 5 seconds
+10:48:10.959 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:10.960 Setting Keep Alive to true
+10:48:10.961 Matchmaker connection closed (hadError=true)
+10:48:10.961 Try reconnect to Matchmaker in 5 seconds
+10:48:15.968 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:15.969 Setting Keep Alive to true
+10:48:15.969 Matchmaker connection closed (hadError=true)
+10:48:15.971 Try reconnect to Matchmaker in 5 seconds
+10:48:20.974 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:20.975 Setting Keep Alive to true
+10:48:20.975 Matchmaker connection closed (hadError=true)
+10:48:20.976 Try reconnect to Matchmaker in 5 seconds
+10:48:25.988 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:25.989 Setting Keep Alive to true
+10:48:25.990 Matchmaker connection closed (hadError=true)
+10:48:25.993 Try reconnect to Matchmaker in 5 seconds
+10:48:30.997 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:30.998 Setting Keep Alive to true
+10:48:31.000 Matchmaker connection closed (hadError=true)
+10:48:31.000 Try reconnect to Matchmaker in 5 seconds
+10:48:36.004 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:36.006 Setting Keep Alive to true
+10:48:36.007 Matchmaker connection closed (hadError=true)
+10:48:36.007 Try reconnect to Matchmaker in 5 seconds
+10:48:41.014 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:41.015 Setting Keep Alive to true
+10:48:41.017 Matchmaker connection closed (hadError=true)
+10:48:41.018 Try reconnect to Matchmaker in 5 seconds
+10:48:46.024 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:46.025 Setting Keep Alive to true
+10:48:46.025 Matchmaker connection closed (hadError=true)
+10:48:46.026 Try reconnect to Matchmaker in 5 seconds
+10:48:51.028 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:51.029 Setting Keep Alive to true
+10:48:51.032 Matchmaker connection closed (hadError=true)
+10:48:51.032 Try reconnect to Matchmaker in 5 seconds
+10:48:56.039 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:48:56.040 Setting Keep Alive to true
+10:48:56.041 Matchmaker connection closed (hadError=true)
+10:48:56.042 Try reconnect to Matchmaker in 5 seconds
+10:49:01.053 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:01.054 Setting Keep Alive to true
+10:49:01.055 Matchmaker connection closed (hadError=true)
+10:49:01.055 Try reconnect to Matchmaker in 5 seconds
+10:49:06.058 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:06.059 Setting Keep Alive to true
+10:49:06.060 Matchmaker connection closed (hadError=true)
+10:49:06.061 Try reconnect to Matchmaker in 5 seconds
+10:49:11.069 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:11.070 Setting Keep Alive to true
+10:49:11.072 Matchmaker connection closed (hadError=true)
+10:49:11.073 Try reconnect to Matchmaker in 5 seconds
+10:49:16.077 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:16.078 Setting Keep Alive to true
+10:49:16.078 Matchmaker connection closed (hadError=true)
+10:49:16.085 Try reconnect to Matchmaker in 5 seconds
+10:49:21.098 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:21.099 Setting Keep Alive to true
+10:49:21.100 Matchmaker connection closed (hadError=true)
+10:49:21.100 Try reconnect to Matchmaker in 5 seconds
+10:49:26.113 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:26.113 Setting Keep Alive to true
+10:49:26.114 Matchmaker connection closed (hadError=true)
+10:49:26.115 Try reconnect to Matchmaker in 5 seconds
+10:49:31.129 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:31.130 Setting Keep Alive to true
+10:49:31.131 Matchmaker connection closed (hadError=true)
+10:49:31.131 Try reconnect to Matchmaker in 5 seconds
+10:49:36.134 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:36.135 Setting Keep Alive to true
+10:49:36.137 Matchmaker connection closed (hadError=true)
+10:49:36.137 Try reconnect to Matchmaker in 5 seconds
+10:49:41.142 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:41.143 Setting Keep Alive to true
+10:49:41.143 Matchmaker connection closed (hadError=true)
+10:49:41.145 Try reconnect to Matchmaker in 5 seconds
+10:49:46.156 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:46.157 Setting Keep Alive to true
+10:49:46.159 Matchmaker connection closed (hadError=true)
+10:49:46.159 Try reconnect to Matchmaker in 5 seconds
+10:49:48.602 player 8 connection closed: 1005 - 
+10:49:48.604 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:49:51.163 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:51.164 Setting Keep Alive to true
+10:49:51.165 Matchmaker connection closed (hadError=true)
+10:49:51.165 Try reconnect to Matchmaker in 5 seconds
+10:49:51.610 player 9 (::ffff:10.31.0.221) connected
+10:49:51.611 [37m[players] <-[32m {"type":"playerCount","count":1}
+10:49:51.612 [37m9 ->[34m {"type":"listStreamers"}
+10:49:51.614 [37m9 <-[32m {"type":"streamerList","ids":[]}
+10:49:56.178 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:49:56.179 Setting Keep Alive to true
+10:49:56.180 Matchmaker connection closed (hadError=true)
+10:49:56.181 Try reconnect to Matchmaker in 5 seconds
+10:50:01.184 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:01.185 Setting Keep Alive to true
+10:50:01.187 Matchmaker connection closed (hadError=true)
+10:50:01.188 Try reconnect to Matchmaker in 5 seconds
+10:50:06.196 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:06.197 Setting Keep Alive to true
+10:50:06.197 Matchmaker connection closed (hadError=true)
+10:50:06.199 Try reconnect to Matchmaker in 5 seconds
+10:50:11.209 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:11.210 Setting Keep Alive to true
+10:50:11.210 Matchmaker connection closed (hadError=true)
+10:50:11.213 Try reconnect to Matchmaker in 5 seconds
+10:50:16.228 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:16.229 Setting Keep Alive to true
+10:50:16.230 Matchmaker connection closed (hadError=true)
+10:50:16.230 Try reconnect to Matchmaker in 5 seconds
+10:50:21.240 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:21.241 Setting Keep Alive to true
+10:50:21.241 Matchmaker connection closed (hadError=true)
+10:50:21.242 Try reconnect to Matchmaker in 5 seconds
+10:50:26.247 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:26.249 Setting Keep Alive to true
+10:50:26.249 Matchmaker connection closed (hadError=true)
+10:50:26.250 Try reconnect to Matchmaker in 5 seconds
+10:50:31.261 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:31.262 Setting Keep Alive to true
+10:50:31.263 Matchmaker connection closed (hadError=true)
+10:50:31.264 Try reconnect to Matchmaker in 5 seconds
+10:50:36.278 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:36.279 Setting Keep Alive to true
+10:50:36.279 Matchmaker connection closed (hadError=true)
+10:50:36.280 Try reconnect to Matchmaker in 5 seconds
+10:50:39.688 player 9 connection closed: 1005 - 
+10:50:39.694 [37m[players] <-[32m {"type":"playerCount","count":0}
+10:50:41.280 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:41.281 Setting Keep Alive to true
+10:50:41.282 Matchmaker connection closed (hadError=true)
+10:50:41.283 Try reconnect to Matchmaker in 5 seconds
+10:50:46.288 Matchmaker connection error {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":9999}
+10:50:46.289 Setting Keep Alive to true
+10:50:46.290 Matchmaker connection closed (hadError=true)
+10:50:46.291 Try reconnect to Matchmaker in 5 seconds
